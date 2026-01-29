@@ -1,92 +1,60 @@
-📌 Project Title
+# Big Data Pipeline Orchestration with Dagster
 
-Big Data Pipeline Orchestration with Dagster
+## 📖 Overview
 
-📖 Overview
+This project demonstrates the implementation of an **ETL (Extract–Transform–Load) data pipeline** orchestrated using **Dagster**, a modern and flexible data orchestration framework.
 
-This project demonstrates the implementation of an ETL (Extract–Transform–Load) pipeline orchestrated using Dagster, a modern data orchestration framework.
+The main objective is to showcase how orchestration tools can be used to **structure, monitor, and manage data workflows** efficiently within a **Big Data ecosystem**, improving reliability, observability, and scalability compared to standalone scripts.
 
-The objective is to showcase how orchestration tools can structure, monitor, and manage data workflows within a Big Data ecosystem.
+---
 
-🏗 Architecture
+## 🏗 Architecture
 
-The pipeline is structured into three main stages:
+The pipeline is organized into **three main stages**, following standard ETL architecture principles:
 
-Extract
+### 🔹 Extract
+- Reads structured data from a **CSV file**
+- Loads the data into a **Pandas DataFrame**
 
-Reads structured data from a CSV file
+### 🔹 Transform
+- Applies data processing and aggregation
+- Example operations:
+  - Grouping data
+  - Computing statistical metrics (e.g., averages)
 
-Loads it into a Pandas DataFrame
+### 🔹 Load
+- Writes the transformed data into an **output file**
+- Prepares the data for **downstream analytics or reporting**
 
-Transform
+---
 
-Performs aggregation and data processing
+## ⚙️ Orchestration with Dagster
 
-Example: grouping and computing averages
+Dagster is used to manage and orchestrate the pipeline by providing:
 
-Load
+- Execution order control
+- Dependency management between steps
+- Step-level monitoring and logging
+- Interactive pipeline visualization via **Dagster UI**
 
-Saves the processed results into an output file
+This demonstrates how orchestration enhances **visibility, reliability, and maintainability** of data pipelines.
 
-Makes the data ready for downstream analytics
+---
 
-Dagster manages:
+## 🛠 Technologies Used
 
-Execution order
+- **Python**
+- **Pandas**
+- **Dagster**
+- **ETL Architecture**
+- **Data Pipeline Orchestration**
 
-Dependency handling
+---
 
-Step-level monitoring
+## ▶ How to Run the Project
 
-Pipeline visualization via Dagster UI
+### 1️⃣ Install dependencies
 
-🛠 Technologies Used
-
-Python
-
-Pandas
-
-Dagster
-
-ETL Architecture
-
-▶ How to Run the Project
-
-Install dependencies:
-
+```bash
 pip install dagster dagster-webserver pandas
 
-
-Launch Dagster:
-
-dagster-webserver -f dagster_project.py
-
-
-Open the browser:
-
-http://127.0.0.1:3000
-
-
-Trigger the pipeline from the UI.
-
-📊 Example Workflow
-
-Extract → Transform → Load
-
-The pipeline demonstrates how orchestration improves visibility and structure compared to running standalone scripts.
-
-🚀 Future Improvements
-
-Add scheduling
-
-Integrate persistent storage
-
-Deploy to cloud environment
-
-Extend to real-time processing
-
-Integrate with Spark or Kafka
-
-📚 Learning Outcome
-
-This project highlights the importance of orchestration tools in modern Data Engineering workflows and their role within the Big Data ecosystem.
