@@ -53,31 +53,23 @@ This demonstrates how orchestration enhances **visibility, reliability, and main
 
 ## ▶ How to Run the Project
 
-### 1️⃣ Install dependencies
+All commands to install dependencies, launch Dagster, and run the pipeline are combined in **one block**:
 
 ```bash
+# Install dependencies
 pip install dagster dagster-webserver pandas
 
----
-
-**2️⃣ Launch Dagster Webserver
-
-```bash
+# Launch Dagster Webserver
 dagster-webserver -f dagster_project.py
 
-### 3️⃣ Open Dagster UI
+# Open your browser and go to:
+# http://127.0.0.1:3000
 
-Open your browser and navigate to:
+# From the Dagster UI:
+# 1. Select the pipeline
+# 2. Launch execution
+# 3. Monitor each step in real time
 
-http://127.0.0.1:3000
-
-4️⃣ Trigger the Pipeline
-
-Select the pipeline from the Dagster UI
-
-Launch the execution
-
-Monitor each step in real time
 
 
 
