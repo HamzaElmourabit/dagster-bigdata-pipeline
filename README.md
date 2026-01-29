@@ -58,3 +58,24 @@ This demonstrates how orchestration enhances **visibility, reliability, and main
 ```bash
 pip install dagster dagster-webserver pandas
 
+### 2️⃣ Launch Dagster Webserver
+
+```bash
+dagster-webserver -f dagster_project.py
+
+### 3️⃣ Open Dagster UI
+
+Open your browser and navigate to:
+
+http://127.0.0.1:3000
+
+4️⃣ Trigger the Pipeline
+
+Select the pipeline from the Dagster UI
+
+Launch the execution
+
+Monitor each step in real time
+
+
+
