@@ -58,7 +58,9 @@ This demonstrates how orchestration enhances **visibility, reliability, and main
 ```bash
 pip install dagster dagster-webserver pandas
 
-### 2️⃣ Launch Dagster Webserver
+---
+
+**2️⃣ Launch Dagster Webserver
 
 ```bash
 dagster-webserver -f dagster_project.py
