@@ -55,16 +55,18 @@ This demonstrates how orchestration enhances **visibility, reliability, and main
 
 All commands to install dependencies, launch Dagster, and run the pipeline are combined in **one block**:
 
-```bash
+```
 # Install dependencies
 pip install dagster dagster-webserver pandas
-
+```
 # Launch Dagster Webserver
+```
 dagster-webserver -f dagster_project.py
-
+```
 # Open your browser and go to:
+```
 # http://127.0.0.1:3000
-
+```
 # From the Dagster UI:
 # 1. Select the pipeline
 # 2. Launch execution
