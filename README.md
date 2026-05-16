@@ -68,6 +68,8 @@ dagster-webserver -f dagster_project.py
 # http://127.0.0.1:3000
 ```
 # From the Dagster UI:
+```
 # 1. Select the pipeline
 # 2. Launch execution
 # 3. Monitor each step in real time
+```
